@@ -2,6 +2,7 @@
   "expo": {
     "name": "commuapp",
     "slug": "commuapp",
+    "scheme": "commuapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bunyasit.commuapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +26,19 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "68245d0a-ac28-4cb1-afcf-9383faa62c66"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/68245d0a-ac28-4cb1-afcf-9383faa62c66"
     }
   }
 }
